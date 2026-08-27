@@ -1,0 +1,15 @@
+name: flock
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.10
+  - jupyter
+  - pandas
+  - numpy
+  - scipy
+  - biopython
+  - boto3
+  - requests
+  - pyyaml
+  - pytest

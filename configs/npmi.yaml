@@ -1,0 +1,12 @@
+# Query scoring against a published NPMI table (eqs 17-18).
+#
+# Tuned by the paper on the PPI3D training set by AUROC. The table-construction parameters
+# (alpha, min_npmi) are not here: the table is published pre-built, and its own provenance
+# header records what it was built with.
+
+top_k: 3                  # top features per residue by activation magnitude
+rho: 0.25                 # fraction of the smaller protein's active residues to score
+t_max: 70                 # cap on the number of residue pairs contributing to a score
+
+# Which features count as active is NOT set here. It is applied during feature extraction,
+# as a threshold on the IDF-normalised activation. See FEATURES.md.
